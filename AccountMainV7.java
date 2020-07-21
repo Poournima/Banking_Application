@@ -129,12 +129,16 @@ public class AccountMainV7 {
 				}
 				break;
 			default:
-				System.out.println("Thank You for Banking With Us !!!");
+				System.out.println("Invalid Choice!1");
 				break;
 			}
 
 			System.out.println("Do you want to continue ?");
 			continueChoice = scanner.next();
+			if(continueChoice != "no")
+			{
+				System.out.println("Thank You for Banking With Us !!!");
+			}
 		} while (continueChoice.equals("yes"));
 		scanner.close();
 
